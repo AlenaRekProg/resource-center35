@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель</title>
+    <link rel="stylesheet" type="text/css" href="styles admin.css">
+    <link rel="shortcut icon" type="image/png" href="img/фавикон.png">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info" onclick="copyToClipboard('+7 (911) 524-18-83')">
+                <img src="img/tel.png" alt="Телефон">
+                <a>+7 (911) 524-18-83</a>
+            </div>
+            <div class="contact-info" onclick="copyToClipboard('kriziscentrvologda@mail.ru')">
+                <img src="img/email.png" alt="Почта">
+                <a>kriziscentrvologda@mail.ru</a>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logoimg" src="img/Логотип.png" alt="Логотип">
+                </a>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="index.html">Кризисный центр</a>
+                <a href="index.html">Проекты</a>
+                <a href="news.html">Новости</a>
+                <a href="index.html">Оставить заявку</a>
+                <a href="library.html">Библиотека</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content" id="section1">
+        <h1 class="main-heading">Панель администратора</h1>
+        <div class="admin-panel">
+            <div class="form-container">
+                <h2>Существующие новости</h2>
+                <div class="news-list" id="newsList">
+                    <div class="news-item" data-title="Выступление в Архангельске"
+                        data-content="Два дня мы активно и с огромным интересом участвовали в конференции «Женщина и семья в кризисе — выход есть всегда» в городе Архангельске.">
+                        <h3>Выступление в Архангельске</h3>
+                        <p>Два дня мы активно и с огромным интересом участвовали в конференции...</p>
+                    </div>
+                    <div class="news-item" data-title="Проект «Сельский вояж-2»"
+                        data-content="Сегодня с отчетом о работе Кризисного центра для женщин выступала на очередном заседании постоянного комитета по экономике и бюджету Вологодской городской думы.">
+                        <h3>Проект «Сельский вояж-2»</h3>
+                        <p>Сегодня с отчетом о работе Кризисного центра для женщин выступала на очередном заседании...
+                        </p>
+                    </div>
+                    <div class="news-item" data-title="Фильм «Самбист»"
+                        data-content="Прошедшая неделя была богата на интересные события. Самое яркое, оставившее много воспоминаний и раздумий было посещение фильма «Самбист».">
+                        <h3>Фильм «Самбист»</h3>
+                        <p>Прошедшая неделя была богата на интересные события. Самое яркое, оставившее много
+                            воспоминаний и раздумий было посещение фильма «Самбист».</p>
+                    </div>
+                    <div class="news-item" data-title="РАЗРЕШИ СЕБЕ…"
+                        data-content="Разреши себе не отвечать на провокации. Разреши не оправдываться, не доказывать, не переубеждать.">
+                        <h3>РАЗРЕШИ СЕБЕ…</h3>
+                        <p>Разреши себе не отвечать на провокации. Разреши не оправдываться, не доказывать, не
+                            переубеждать.</p>
+                    </div>
+                    <div class="news-item" data-title="Абьюз"
+                        data-content="Абьюз – это форма жестокого обращения, которая может проявляться в различных сферах жизни. Он может быть физическим, психологическим, сексуальным и экономическим.">
+                        <h3>Абьюз</h3>
+                        <p>Абьюз – это форма жестокого обращения, которая может проявляться в различных сферах жизни. Он
+                            может быть физическим, психологическим, сексуальным и экономическим.</p>
+                    </div>
+                    <div class="news-item" data-title="Что такое самооценка?"
+                        data-content="Самооценка – это то, как вы оцениваете свои личные качества, внешность, способности. Она снижается после неудач, травматичного опыта, обид и страхов.">
+                        <h3>Что такое самооценка?</h3>
+                        <p>Самооценка – это то, как вы оцениваете свои личные качества, внешность, способности. Она
+                            снижается после неудач, травматичного опыта, обид и страхов.</p>
+                    </div>
+                    <div class="news-item" data-title="Минутка с психологом"
+                        data-content="Иногда в жизни появляются искренние и открытые люди, с которыми приятно проводить время. В их компании ты чувствуешь себя счастливым и забываешь о времени.">
+                        <h3>Минутка с психологом</h3>
+                        <p>Иногда в жизни появляются искренние и открытые люди, с которыми приятно проводить время. В их
+                            компании ты чувствуешь себя счастливым и забываешь о времени.</p>
+                    </div>
+                    <div class="news-item" data-title="Как легко раздуть из мухи слона"
+                        data-content="Манипулятор может сделать вас виновным, раздувая мелочи до грандиозных проблем.">
+                        <h3>Как легко раздуть из мухи слона</h3>
+                        <p>Манипулятор может сделать вас виновным, раздувая мелочи до грандиозных проблем.</p>
+                    </div>
+                    <div class="news-item" data-title="Признаки энергетических вампиров"
+                        data-content="Этот человек всегда жалуется на свои проблемы и требует сочувствия, не радуясь чужому счастью. Он часто затевает конфликты и ссоры.">
+                        <h3>Признаки энергетических вампиров</h3>
+                        <p>Этот человек всегда жалуется на свои проблемы и требует сочувствия, не радуясь чужому
+                            счастью. Он часто затевает конфликты и ссоры.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container" id="editNewsFormContainer" style="display: none;">
+                <h2>Редактировать новость</h2>
+                <form id="editNewsForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="newsTitle">Заголовок новости:</label>
+                        <input type="text" id="newsTitle" name="newsTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsContent">Содержание новости:</label>
+                        <textarea id="newsContent" name="newsContent" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsImage">Изображение новости:</label>
+                        <input type="file" id="newsImage" name="newsImage" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Сохранить новость</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>Отправленные сообщения</h2>
+                <div class="messages">
+                    <div class="message">
+                        <h3>Имя: Иван Иванов</h3>
+                        <p>Тема: Волонтёрство</p>
+                        <p>Сообщение: Можно ли стать частью волонтёрского состава?</p>
+                        <p>Контактные данные: ivan@example.com</p>
+                    </div>
+                    <div class="message">
+                        <h3>Имя: Анна Петрова</h3>
+                        <p>Тема: Помощь</p>
+                        <p>Сообщение: Нужна помощь проживанием.</p>
+                        <p>Контактные данные: anna@example.com</p>
+                    </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-block">
+                <h3>При поддержке</h3>
+                <ul>
+                    <li>Правительства Вологодской области</li>
+                    <li>Департамента общественных связей Вологодской области</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>На базе</h3>
+                <ul>
+                    <li>АНО «КРИЗИСНЫЙ ЦЕНТР ДЛЯ ЖЕНЩИН» г. Вологда</li>
+                    <li>+7 911 524-18-83</li>
+                    <li>+7 911 522-66-38</li>
+                    <li>kriziscentrvologda@mail.ru</li>
+                    <li>https://vk.com/kriziscentrvologda</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Сотрудничество</h3>
+                <ul>
+                    <li>Ищем инвесторов и партнеров</li>
+                    <li>Сотрудничество со СМИ</li>
+                    <li>Открыть кризисный центр</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2025 Рекункова Алёна Владимировна ИСП-421р
+            </div>
+            <div class="social-icons">
+                <a href="https://vk.com/kriziscentrvologda" target="_blank">
+                    <img src="img/вк.png" alt="Facebook Icon">
+                </a>
+                <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank">
+                    <img src="img/ватсап.png" alt="Twitter Icon">
+                </a>
+                <a href="https://t.me/kriziscentrvologda" target="_blank">
+                    <img src="img/тг.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="toTop">
+        <img src="img/стрелка наверх.png" alt="News Image 3">
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.fn.scrollToTop = function () {
+                $(this).hide().removeAttr("href");
+                if ($(window).scrollTop() != "0") {
+                    $(this).fadeIn("slow");
+                }
+                var scrollDiv = $(this);
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() == "0") {
+                        $(scrollDiv).fadeOut("slow");
+                    } else {
+                        $(scrollDiv).fadeIn("slow");
+                    }
+                });
+                $(this).click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 1000, "swing");
+                });
+            };
+        });
+
+        $(function () {
+            $("#toTop").scrollToTop();
+        });
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function () {
+                alert('Скопировано: ' + text);
+            }).catch(function (err) {
+                console.error('Error in copying text: ', err);
+            });
+        }
+
+        $('.news-item').on('click', function () {
+            const title = $(this).data('title');
+            const content = $(this).data('content');
+            $('#newsTitle').val(title);
+            $('#newsContent').val(content);
+            $('#editNewsFormContainer').show();
+        });
+
+        $('#editNewsForm').on('submit', function (event) {
+            event.preventDefault();
+            const title = $('#newsTitle').val();
+            const content = $('#newsContent').val();
+
+            // Find the news item that matches the title and update its content
+            $('.news-item').each(function () {
+                if ($(this).data('title') === title) {
+                    $(this).data('content', content);
+                    $(this).find('p').text(content);
+                }
+            });
+
+            $('#editNewsFormContainer').hide();
+        });
+    </script>
+</body>
+
+</html>
